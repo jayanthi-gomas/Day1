@@ -1,0 +1,73 @@
+BEGIN
+       DECLARE age as INTEGER
+       PROMT " Enter age " and store in age
+        IF( age < 18 )
+             print "Not eligible"
+         ELSEIF(age > 60 )
+              print " you are a senior citizen )
+          ELSEIF( age >= 18 && age <=60 ) 
+              print "you are eligible"
+          ENDIF
+  END
+
+
+BEGIN 
+DECLARE num as interger 
+For num = 1 to 10
+If( num % 2 == 0) 
+Display "even" 
+else 
+Display "odd" 
+ENDIF 
+END FOR
+ END
+
+BEGIN
+ PROMPT " Enter a num " AND STORE IN num
+   IF ( ( num%2 == 0 ) && ( num%3 == 0 ) ) && ( num%5 ==0))
+      Print " Divisible by 2,3,5 "
+   Else 
+      Print " Not Divisible "
+   EndIf
+End
+
+BEGIN 
+DECLARE num as interger 
+For num = 1 to 10
+If( num % 2 == 0) 
+Display "even" 
+else 
+Display "odd" 
+ENDIF 
+END FOR
+END
+
+BEGIN
+DECLARE num as INTEGER
+WHILE ( num <=5) DO
+Display " num"
+num=num+1
+END WHILE
+END
+
+
+Begin
+    Declare numbers[5] as integer array
+    Declare i,n as integer
+    Declare num as integer
+        for i =0 to 4
+            ACCEPT numbers[i]
+        for i = 0 to 4
+            num =0
+        for n= 2 to i
+            if(numbers[i]%n==0)
+                num = num+1
+            end if
+        end for
+        if(num == 0)
+            display numbers[i] is prime
+        else
+            display numbers[i] is not prime
+        end if
+        end for
+end
