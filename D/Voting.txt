@@ -1,0 +1,11 @@
+BEGIN
+       DECLARE age as INTEGER
+       PROMT " Enter age " and store in age
+        IF( age < 18 )
+             print "Not eligible"
+         ELSEIF(age > 60 )
+              print " you are a senior citizen )
+          ELSEIF( age >= 18 && age <=60 ) 
+              print "you are eligible"
+          ENDIF
+  END
